@@ -1,0 +1,210 @@
+:root {
+    --primary-font: "Helvetica Neue", Arial, sans-serif;
+    --secondary-font: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--secondary-font);
+    background-color: #BA4949;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    border: 1.5em groove rgb(156, 46, 46);
+
+    /* alignmentt */
+    display: flex;
+    /* flexbox for responsive page */
+    flex-wrap: wrap;
+    /*  */
+    justify-content: center;
+    /* vertiacally center */
+    align-items: center;
+    /* horizontally center */
+}
+
+/* **************************************************************************** */
+
+.navbar {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .options {
+    height: 80%;
+    width: 40%;
+    box-shadow: 0px 5px 8px black ;
+    padding-top: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.navbar .options h2 {
+    height: 100%;
+    width: 40%;
+}
+
+.options .menu {
+    margin-left: 9em;
+
+    height: 100%;
+    width: 60%;
+    text-decoration: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.options .menu li {
+    display: inline-block;
+    font-weight: bold;
+}
+.menu button{
+    margin-top: 0.7em;
+    margin-left: 3em;
+
+    border: none;
+    color: white;
+    background-color: #C15C5C;
+    font-size: medium;
+    font-weight: bold;
+    position: relative;
+}
+.UserInput{
+    position: absolute;
+    top:50px;
+    left:0;
+
+    width: 280px;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    text-align: justify;
+    color: #444;
+
+    flex-direction: column;
+    z-index: 100;
+    display: none;
+
+    /* Smooth transition effect */
+    transform: translateY(-10px);
+    transition: all 2s ease;
+
+}
+
+button .UserInput li{
+    margin-top: 2em;
+    list-style: none;
+}
+
+.UserInput label {
+  font-weight: bold;
+  margin-right: 0.5em;
+  color: #333;
+}
+
+.UserInput input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+}
+
+/* **************************************************************************************** */
+
+.box {
+    height: 60%;
+    width: 40%;
+    /* border: 2px solid black; */
+    text-align: center;
+    background-color: #C15C5C;
+} 
+
+.slots{
+    height: 20%;
+    width: 100%;
+    /* border: 2px solid rgb(68, 203, 35); */
+}
+.slots .box_nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    /* border: 2px solid rebeccapurple; */
+}
+.slots .box_nav button{
+    height: 80%;
+    width: 20%;
+    /* margin-left: 4em; */
+    border: none;
+    border-radius: 5px;
+    background-color: #0000003d;
+
+    font-family: var(--secondary-font);
+    font-size: large;
+    font-weight: bold;
+
+    color: white;
+}
+
+
+.countdown{
+    height: 60%;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown p{
+    font-size: 6em;
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+}
+
+#start{
+    height: 20%;
+    width: 100%;
+
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start button{
+    height: 80%;
+    width: 30%;
+
+    border: none;
+    border-radius: 50px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 1.5em;
+
+    color: #C15C5C;
+
+}
