@@ -1,4 +1,5 @@
 🍅 Pomodoro App 🍅
+
 A clean, simple, and effective Pomodoro timer to help you boost your productivity and stay focused.
 
 🌟 About This Project
@@ -45,13 +46,6 @@ Bash
 
 # On Windows
 start index.html
-
-# On macOS
-open index.html
-
-# On Linux
-xdg-open index.html
-And that's it! You're ready to get productive.
 
 🤝 How to Contribute
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
